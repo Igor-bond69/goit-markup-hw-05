@@ -45,7 +45,6 @@ img {
   height: auto;
 }
 
-/* стилизация кнопки ссылка кнопка  */
 .btn {
   display: inline-block;
   border-radius: 4px;
@@ -80,15 +79,6 @@ img {
   padding-right: 15px;
 }
 
-.site-nav {
-  align-items: initial;
-  display: flex;
-  width: 294px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .contacts {
   display: flex;
   margin-left: auto;
@@ -113,7 +103,6 @@ img {
 
 .container-nav {
   margin-left: 85px;
-  /* margin-top: 32px; */
   margin-bottom: 0;
 }
 
@@ -150,7 +139,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 94px;
 }
 
 .button {
@@ -158,6 +146,16 @@ img {
 }
 
 /* site nav */
+
+.site-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 294px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -189,9 +187,18 @@ img {
   display: block;
   bottom: 0;
   width: 100%;
-  height: 5px;
-  background-color: brown;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  opacity: 0;
+  transition: opaciti var(--animation-duration) var(--animation-timing-function);
 }
+.link-header:hover::after,
+.link-header:focus:after {
+  opacity: 1;
+  cursor: pointer;
+}
+
 .site-nav .link-header:hover,
 .site-nav .link-header:focus {
   color: var(--accent-color);
