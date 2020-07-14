@@ -231,6 +231,8 @@ img {
 }
 
 .overlay {
+  display: flex;
+  align-items: center;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -248,11 +250,12 @@ img {
 }
 
 .hero-title {
+  padding-bottom: 30px;
   margin: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: var(--title-text-color);
+  color: var(--primary-white-color);
 }
 
 /* section */
