@@ -616,28 +616,28 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: backgroundcolor var(--animation-duration)
+    var(--animation-timing-function);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .icon-social {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  cursor: pointer;
+  transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 
 .icon-social:hover,
 .icon-social:focus {
   fill: var(--primary-white-color);
-}
-
-.icon-twitter:hover,
-.icon-twitter:focus {
-  fill: var(--primary-white-color);
+  cursor: pointer;
 }
 
 /* clients */
@@ -653,11 +653,12 @@ img {
 }
 .client-card {
   fill: #afb1b8;
-  cursor: pointer;
+  transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 .client-card:hover,
 .client-card:focus {
   fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .first {
@@ -699,7 +700,8 @@ img {
   width: 170px;
   height: 90px;
   margin-right: 30px;
-  cursor: pointer;
+  transition: border-color var(--animation-duration)
+    var(--animation-timing-function);
 }
 
 .picture:last-child {
@@ -708,6 +710,7 @@ img {
 
 .picture:hover {
   border-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* button */
@@ -726,7 +729,6 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   border-radius: 4px;
-  cursor: pointer;
   transition: background-color,
     color var(--animation-duration) var(--animation-timing-function);
 }
@@ -735,18 +737,19 @@ img {
 .but:focus {
   background-color: navy;
   color: var(--accent-color);
+  cursor: pointer;
 }
 .icon-send {
   width: 24px;
   height: 24px;
   margin-left: 10px;
   --color4: var(--primary-white-color);
-  cursor: pointer;
 }
 
 .icon-send:hover,
 .icon-send:focus {
   --color4: var(--accent-color);
+  cursor: pointer;
 }
 
 .button {
@@ -783,6 +786,7 @@ img {
 .button-style :hover,
 .button-style :focus {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .button-primary :hover {
